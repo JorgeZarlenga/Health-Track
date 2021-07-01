@@ -1,0 +1,69 @@
+/* AJUSTES GERAIS DA PÁGINA */
+
+/****** Ajustes gerais da página ******/
+
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+  font-family: 'Lekton', sans-serif;
+  font-weight: 700;
+}
+
+h1{
+	font-family: Orbitron;
+}
+
+h2{
+	padding-right: none;
+}
+
+body{
+	height: 100vh;
+	background: #E9C46A;
+}
+
+/****** Página de login ******/
+
+p{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	transition: 0.5s;
+}
+
+a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+h1{
+	color: #E76F51;
+	font-family: Orbitron;
+	text-align: center;
+	font-size: 42px;
+	font-weight: 600;
+}
+
+.btn-primary:hover{
+	background-color: #264653;
+}
+
+button a{
+	color: white;
+}
+
+.btn-primary{
+	background-color: #264653;
+}
+
+.center-form{
+	margin: auto auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+

@@ -1,0 +1,132 @@
+<!doctype html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link href="../css/estilo-itens.css" rel="stylesheet">
+
+    <title>Pressão arterial</title>
+  </head>
+  
+  <body id="pagina">
+    <main class="pressoes" id="principal">
+      <header>
+        <div class="row d-flex align-items-center barra-superior">
+          <div class="col-1">
+            <span>
+              <input type="button" class="btn btn-primary" id="menu-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            </span>
+          </div>
+          <div class="col-11"><span>Pressão arterial</span></div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center data-titulos-colunas">
+          <div class="d-flex justify-content-center align-items-center data">
+            <span id="dia-cabecalho">MEDIÇÕES</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Início do Off Canvas -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="header-offcanvas offcanvas-superior">
+          <div>
+            <h1>Health Track</h1>
+            <h2>Jorge Zarlenga Regiani</h2>
+            <h3>jorge.zarlenga@outlook.com</h3>
+          </div>
+        </div>
+        <div class="body-offcanvas">
+          <ul>
+            <li id="dashboard"><a href="dashboard.html"><span><img src="../img/dashboard.svg" alt="Dashboard"></span><span>Dashboard</span></a></li>
+            <li id="pesos"><a href="pesos.html"><span><img src="../img/weight.svg" alt="Pesos"></span><span>Lista de pesos</span></a></li>
+            <li id="alimentacao"><a href="alimentacao.html"><span><img src="../img/food.svg" alt="Alimentação"></span><span>Alimentação</span></a></li>
+            <li id="pressoes"><a href="pressoes.html"><span><img src="../img/blood-pressure-gauge.svg" alt="Pressão"></span><span>Pressão arterial</span></a></li>
+            <li id="exercicios"><a href="exercicios.html"><span><img src="../img/exercises.svg" alt="Exercícios"></span><span>Exercícios</span></a></li>
+          </ul>
+          <hr>
+          <ul>
+            <li id="configuracoes"><a href=""><span><img src="../img/settings.svg" alt="Dashboard" width="20px"></span><span>Configurações</span></a></li>
+            <li id="sobre"><a href=""><span><img src="../img/about.svg" alt="Dashboard" width="20px"></span><span>Sobre</span></a></li>
+            <li id="logout"><a href="index.html"><span><img src="../img/logout.svg" alt="Dashboard" width="20px"></span><span>Logout</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Fim do Off Canvas -->
+      
+      <section>
+
+        <div class="card mt-2">
+            <div class="card-header d-flex justify-content-center">
+              <span class="texto">
+                <span class="d-flex justify-content-center">27/06/2021</span>
+              </span>                           
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-center texto">
+                <span class="texto">
+                  <span class="d-flex justify-content-center">Pressão sistólica (mmHg)</span>
+                  <p class="d-flex justify-content-center">130</p>
+                </span>         
+                <span class="texto">
+                  <span class="d-flex justify-content-center">Pressão diastólica (mmHg)</span>
+                  <p class="d-flex justify-content-center">80</p>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-center align-items-center">
+                <span class="texto destaque"><b>Ações</b></span>
+                <span class="d-flex justify-content-center textos-card">
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-lg" id="card-edit"><a href="cadastro-pressao.html"><img src="../img/pencil-fill.svg" alt=""></a></button>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-lg" id="card-delete"><a href=""><img src="../img/trash-fill.svg" alt=""></a></button>
+                  </div>
+                </span>
+              </li>
+            </ul>
+        </div>
+
+        <div class="card mt-2">
+          <div class="card-header d-flex justify-content-center">
+            <span class="texto">
+              <span class="d-flex justify-content-center">26/06/2021</span>
+            </span>                           
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-center texto">
+              <span class="texto">
+                <span class="d-flex justify-content-center">Pressão sistólica (mmHg)</span>
+                <p class="d-flex justify-content-center">120</p>
+              </span>         
+              <span class="texto">
+                <span class="d-flex justify-content-center">Pressão diastólica (mmHg)</span>
+                <p class="d-flex justify-content-center">80</p>
+              </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-center align-items-center">
+              <span class="texto destaque"><b>Ações</b></span>
+              <span class="d-flex justify-content-center textos-card">
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-primary btn-lg" id="card-edit"><a href="cadastro-pressao.html"><img src="../img/pencil-fill.svg" alt=""></a></button>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-primary btn-lg" id="card-delete"><a href=""><img src="../img/trash-fill.svg" alt=""></a></button>
+                </div>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+      
+      <footer class="row">
+        <button type="submit" class="btn btn-primary botao-inferior"><a href="cadastro-pressao.html">ADICIONAR MEDIÇÃO</a></button>
+      </footer>
+      
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+  </html>

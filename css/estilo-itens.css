@@ -1,0 +1,315 @@
+/****** Ajustes gerais da página ******/
+
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+  font-family: 'Lekton', sans-serif;
+}
+
+body{
+  height: 100%;
+  width: 99vw;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  background-color: #FFFFFF;
+}
+
+#pagina header{
+  background-color: #2A9D8F;
+}
+
+#pagina section{
+  height: 73vh;
+  background-color: #FFFFFF;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100vw;
+}
+
+#pagina footer{
+  height: 6vh;
+  background-color: #264653;
+}
+
+/****** Barra de título ******/
+
+#menu-button{
+  width: 50px;
+  background-color: #2A9D8F;
+  border: none;
+  background: url(../img/menu.svg);
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+
+#menu-button img{
+  width: 30px;
+}
+
+.col-11{
+  text-align: center;
+  padding: 2px;
+}
+
+.barra-superior{
+  background-color: #2A9D8F;
+  height: 40%;
+  min-height: 40px;
+}
+
+.barra-superior a{
+  padding-bottom: 12px;
+  margin-right: 9%;
+}
+
+.barra-superior span{
+  margin-right: 9%;
+  font-size: 1.5em;
+}
+
+/****** Off Canvas ******/
+.offcanvas{
+  width: 80%;
+  min-width: 300px;
+}
+
+.header-offcanvas h1{
+  color: #E76F51;
+  font-weight: 600;
+}
+
+.header-offcanvas h2{
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.header-offcanvas h3{
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.header-offcanvas{
+  height: 30vh;
+  min-height: 120px;
+  background-color: #E9C46A;
+}
+
+.offcanvas-superior{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-offcanvas h1{
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 3em;
+}
+
+.header-offcanvas h2{
+  text-align: center;
+  font-size: 130%;
+}
+
+.header-offcanvas h3{
+  text-align: center;
+  font-size: 110%;
+}
+
+.body-offcanvas{
+  background-color: #264653;
+  height: 70%;
+  padding: 10px;
+}
+
+.body-offcanvas img{
+  width: 20px;
+  fill: #FFFFFF;
+}
+
+.body-offcanvas li{
+  list-style-type: none;
+  padding: 1%;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+/* Destaque de estilização para o item de menu selecionado na página atual */
+body .alimentacao li#alimentacao,
+body .dashboard li#dashboard,
+body .exercicios li#exercicios,
+body .pesos li#pesos,
+body .pressoes li#pressoes
+{
+	background-color: #E9C46A;
+}
+
+.body-offcanvas li a{
+  margin: 0px;
+  width: 100%;
+  display: inline-block;
+}
+
+.body-offcanvas li:hover{
+  background-color: #E76F51;
+  cursor: pointer;
+}
+
+.body-offcanvas ul{
+  margin: 1px;
+}
+
+.body-offcanvas li a{
+  text-decoration: none;
+}
+
+.body-offcanvas span{
+  margin: 10px;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.body-offcanvas img{
+  margin-bottom: 4px;
+}
+
+hr{
+  color: #FFFFFF;
+}
+
+/****** Barra de data e títulos de colunas ******/
+
+.data-titulos-colunas{
+  background-color: #E3E3E3;
+  vertical-align: center;
+  height: 60%;
+}
+
+.data-titulos-colunas span{
+  padding: 5px;
+}
+
+.data{
+  height: 14.5vh;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #000000;
+}
+
+.data button{
+  border: none;
+  background-color: #E3E3E3;
+}
+
+.data img{
+  width: 30px;
+  margin-bottom: 3px;
+}
+
+.data #dia-cabecalho{
+  margin-top: 2px;
+  font-size: 1.5em;
+}
+
+/*
+.titulos-colunas{
+  padding: 5px;
+}
+
+.titulos-colunas span{
+  padding: 5px;
+  text-align: center;
+}
+
+*/
+
+/****** Section - Cards ******/
+
+section{
+  overflow: auto;
+}
+
+.card{
+  height: fit-content;
+  border: 1px solid #000000;
+}
+
+.destaque{
+  font-weight: 800;
+}
+
+footer .botao-inferior{
+  height: 6vh;
+  background-color: #264653;
+  color: #FFFFFF;
+}
+
+.texto{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.texto p{
+    font-weight: 100;   
+    margin-bottom: 0;
+}
+
+#card-edit{
+  background-color: #FFFFFF;
+  border: none;  
+}
+
+#card-edit img{
+  width: 20px;
+}
+
+#card-delete{
+  background-color: #FFFFFF;
+  border: none;  
+}
+
+#card-delete img{
+  width: 20px;
+}
+
+/****** Botão inferior ******/
+
+footer .botao-inferior:hover {
+  background-color: #264653;
+}
+
+footer .botao-inferior a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/****** Media Queries ******/
+
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
